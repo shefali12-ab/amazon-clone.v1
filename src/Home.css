@@ -1,0 +1,19 @@
+.home{
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1500px;
+}
+.home-row{
+    display: flex;
+    z-index: 1;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.home-image{
+    width: 100%;/* to snap everything into a viewport*/
+    z-index: -1; /* to make it behind anything else z-index is -1*/
+    margin-bottom: -150px;/*elemnts off to it creep into it*/
+    mask-image: linear-gradient(to bottom,rgba(0,0,0,1),rgba(0,0,0,0)); /* to give a gradient effect ,go from original color to opaque*/
+}
